@@ -68,7 +68,7 @@ except Exception:  # pragma: no cover
 # DO NOT USE ARGS. Change these variables here at the top of the file instead.
 # -----------------------------------------------------------------------------
 
-BASE_DIR = Path(r"E:\online wannabequant website\get spot and futures klines live\data_dump")
+BASE_DIR = Path("\get spot and futures klines live\data_dump")
 BULK_CSV_DIR = BASE_DIR / "bulk_csv"
 DAILY_BIN_DIR = BASE_DIR / "daily_bin"
 LOG_DIR = BASE_DIR / "logs"
@@ -81,23 +81,13 @@ RUN_MODE = "all"
 # Historical bulk lists. These can include old/dead/delisted symbols.
 # CM historical symbols may include dated contracts like ADAUSD_200925. Keep those for bulk.
 SYMBOLS_SPOT_BULK = ["AAVEUSDT", "BTCUSDT", "ETHUSDT", "LTCUSDT", "SOLUSDT", "XRPUSDT"]
-SYMBOLS_FUTURES_UM_BULK = [    'AAVEUSDT', 'ADAUSDT', 'ALGOUSDT', 'APTUSDT', 'ARUSDT', 'ATOMUSDT', 'AVAXUSDT',
-    'BCHUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ENAUSDT', 'ETCUSDT', 'ETHUSDT',
-    'FILUSDT', 'HBARUSDT', 'HYPEUSDT', 'ICPUSDT', 'LINKUSDT', 'LTCUSDT',
-    'NEARUSDT', 'ONDOUSDT', 'POLUSDT', 'PUMPUSDT', 'QNTUSDT', 'RENDERUSDT',
-    'SOLUSDT', 'SUIUSDT', 'TAOUSDT', 'TONUSDT', 'TRUMPUSDT', 'UNIUSDT', 'WLDUSDT',
-    'WLFIUSDT', 'XLMUSDT', 'XRPUSDT']
+SYMBOLS_FUTURES_UM_BULK = [    'AAVEUSDT']
 SYMBOLS_FUTURES_CM_BULK = ["AAVEUSD_PERP", "BTCUSD_PERP"]
 
 # Live + REST 72h lists. These should only be live/trading symbols.
 # Do not put expired CM dated contracts here.
 SYMBOLS_SPOT_LIVE_REST = ["AAVEUSDT", "BTCUSDT", "ETHUSDT", "LTCUSDT", "SOLUSDT", "XRPUSDT"]
-SYMBOLS_FUTURES_UM_LIVE_REST = [    'AAVEUSDT', 'ADAUSDT', 'ALGOUSDT', 'APTUSDT', 'ARUSDT', 'ATOMUSDT', 'AVAXUSDT',
-    'BCHUSDT', 'BTCUSDT', 'DOGEUSDT', 'DOTUSDT', 'ENAUSDT', 'ETCUSDT', 'ETHUSDT',
-    'FILUSDT', 'HBARUSDT', 'HYPEUSDT', 'ICPUSDT', 'LINKUSDT', 'LTCUSDT',
-    'NEARUSDT', 'ONDOUSDT', 'POLUSDT', 'PUMPUSDT', 'QNTUSDT', 'RENDERUSDT',
-    'SOLUSDT', 'SUIUSDT', 'TAOUSDT', 'TONUSDT', 'TRUMPUSDT', 'UNIUSDT', 'WLDUSDT',
-    'WLFIUSDT', 'XLMUSDT', 'XRPUSDT']
+SYMBOLS_FUTURES_UM_LIVE_REST = [    'AAVEUSDT', 'ADAUSDT', 'ALGOUSDT', 'XLMUSDT', 'XRPUSDT']
 SYMBOLS_FUTURES_CM_LIVE_REST = ["AAVEUSD_PERP", "BTCUSD_PERP"]
 
 # Auto symbol discovery.
