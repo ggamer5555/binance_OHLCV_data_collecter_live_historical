@@ -53,7 +53,7 @@ from fastapi.responses import HTMLResponse
 # CONFIG VARIABLES - EDIT THESE ONLY
 # =============================================================================
 
-BASE_DIR = Path(r"E:\online wannabequant website\get spot and futures klines live\data_dump")
+BASE_DIR = Path("\get spot and futures klines live\data_dump")
 DAILY_BIN_DIR = BASE_DIR / "daily_bin"
 
 HOST = "127.0.0.1"
