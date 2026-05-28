@@ -1,4 +1,4 @@
-# binance_OHLCV_data_collecter_live_historical
+# binance_OHLCV_data_collector_live_historical
 
 A Python-based Binance OHLCV data collector and local dashboard for collecting, storing, validating, and plotting **1-minute OHLCV candle data** from Binance Spot, USD-M Futures, and COIN-M Futures markets.
 
